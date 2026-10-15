@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
-
+import "../styles/ContactForm.css"
 const EMAILJS_SERVICE_ID = 'service_4qtetln'
 const EMAILJS_TEMPLATE_ID = 'template_i5p2uwc'
 const EMAILJS_PUBLIC_KEY = 'I2_HcnKspAlhl6kuZ'
 
-
 const MAX_MENSAJE = 300
-
 
 const REGEX_NOMBRE = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$/
 const REGEX_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -46,7 +44,6 @@ function ContactForm() {
         return ''
     }
   }
-
 
   function validarFormulario() {
     const nuevosErrores = {}
